@@ -1,7 +1,3 @@
-Here's a README template for your Movie App project based on the information available in your GitHub repository:
-
----
-
 # Movie App
 
 Welcome to the Movie App! This application allows users to explore trending movies and TV series, search for specific titles, and get detailed information about them. It utilizes the OMDB API to fetch movie data and provides a user-friendly interface built with React.
