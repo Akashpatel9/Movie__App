@@ -80,7 +80,7 @@ const Movies = () => {
       <ClimbingBoxLoader
         color="rgb(168 85 247)"
         margin={5}
-        size={80}
+        size={30}
         speedMultiplier={1}
       />
     </div>
