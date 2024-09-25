@@ -12,7 +12,7 @@ const TopNev = () => {
 
   function searchProduct() {
     axios
-    .get(`https://www.omdbapi.com/?s=${search}&apikey=${apiKey}`)
+    .get(`?s=${search}&apikey=${apiKey}`)
     .then((data) => {
       if (data.data.Search) {
         setSearchData(data.data.Search); // OMDB results are in the 'Search' field
