@@ -15,7 +15,7 @@ const Movies = () => {
     const apiKey = "5f0c93bd"; // Replace with your OMDB API key
  
     axios
-      .get(`https://www.omdbapi.com/?s=Movie&page=${page}&apikey=${apiKey}`)
+      .get(`?s=Movie&page=${page}&apikey=${apiKey}`)
       .then((data) => {
         if (data.data.Search && data.data.Search.length > 0) {
           if (trending.length > 0) {

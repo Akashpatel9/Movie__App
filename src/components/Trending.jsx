@@ -17,7 +17,7 @@ const Trending = () => {
 
   const getTrending = () => {
     axios
-      .get(`https://www.omdbapi.com/?s=trending&apikey=${apiKey}&page=${page}`)
+      .get(`?s=trending&apikey=${apiKey}&page=${page}`)
       .then((response) => {
         const results = response.data.Search;
         const total = parseInt(response.data.totalResults, 10); // Get total results

@@ -14,7 +14,7 @@ const TvShows = () => {
 
 function getSeries() {
   axios
-    .get(`https://www.omdbapi.com/?s=all&type=series&page=${page}&apikey=${key}`)
+    .get(`?s=all&type=series&page=${page}&apikey=${key}`)
     .then((data) => {
       if (data.data.Search && data.data.Search.length > 0) {
         if (trending.length > 0) {

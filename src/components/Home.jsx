@@ -21,7 +21,7 @@ const Home = () => {
     const randomQuery = randomSearches[Math.floor(Math.random() * randomSearches.length)];
 
     axios
-      .get(`http://www.omdbapi.com/?s=${randomQuery}&apikey=${apiKey}`)
+      .get(`?s=${randomQuery}&apikey=${apiKey}`)
       .then((response) => {
         const results = response?.data?.Search;
         if (results && results.length > 0) {

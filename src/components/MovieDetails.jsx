@@ -39,7 +39,7 @@ const MovieDetails = () => {
           <div className="flex justify-center gap-6 items-center">
             <Link
               target="_blank"
-              to={`https://www.imdb.com/title/${info?.detail?.imdb_id}`}
+              to={`title/${info?.detail?.imdb_id}`}
               className="hover:text-purple-400"
             >
               imdb
