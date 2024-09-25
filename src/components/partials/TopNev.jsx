@@ -27,6 +27,9 @@ const TopNev = () => {
     searchProduct();
   }, [search]);
 
+  console.log(searchData);
+  
+
   return (
     <div className="px-2 py-4 w-full">
       <div className="w-[80%] relative mx-auto">
@@ -51,7 +54,7 @@ const TopNev = () => {
         <div className="absolute w-full left-[50%] z-10 -translate-x-[50%] bg-zinc-800 rounded-xl px-6 max-h-[70vh] overflow-auto mt-1">
           {searchData.map((item, idx) => {
             return (
-              <Link key={item.imdbID} to={`/${item.Type}/details/${item.id}`}>
+              <Link key={item.imdbID} to={`/${item.Type}/details/${item?.imdbID}`}>
                 {idx !== 0 && <div className="w-full h-[1px] bg-white"></div>}
                 <div className=" hover:text-white flex text-zinc-400 items-center h-24 gap-5 border-b-zinc-900 cursor-pointer">
                   <div className="w-16 h-20 rounded overflow-hidden">

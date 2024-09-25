@@ -77,7 +77,7 @@ const Home = () => {
         <div className="flex items-center justify-center">
           <i
             onClick={() => setFloatingNev(!floatingNev)}
-            className="max-sm:block hidden ri-list-indefinite text-xl text-zinc-500 hover:text-purple-600 pl-2"
+            className="max-sm:block hidden ri-list-indefinite text-2xl text-zinc-500 hover:text-purple-600 pl-4"
           ></i>
           <TopNev />
         </div>
